@@ -1,5 +1,5 @@
 require './lib/docking_station.rb'
 DockingStation = Class.new
 describe DockingStation do
-  #it "Releases a bike"
+  it { @dockingStation.respond_to?('release_bike') }
 end
