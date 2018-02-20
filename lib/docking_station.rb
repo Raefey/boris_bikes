@@ -1,13 +1,10 @@
 class DockingStation
   def release_bike
+    Bike.new
   end
 end
-docking_station = DockingStation.new
-docking_station.release_bike
 class Bike
   def working?
-    puts "its working"
+    true
   end
 end
-current_bike = Bike.new
-current_bike.working?
